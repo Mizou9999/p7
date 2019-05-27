@@ -1,0 +1,152 @@
+        /* font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif;  #AF5899; #FEED17 */
+        
+        body html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        
+        #eat-me {
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            width: 100%;
+        }
+        
+        .me {
+            color: #483536;
+        }
+        
+        .navbar-brand {
+            padding: 0;
+            margin: 0;
+            margin-right: auto;
+        }
+        
+        .logo-text {
+            font-weight: bold;
+            font-size: 2.2rem;
+        }
+        
+        .principal {
+            animation: div-show-up 0.5s forwards 0s linear;
+        }
+        
+        #principal {
+            animation: div-show-up 0.5s forwards 0s linear;
+        }
+        
+        .clickDiv {
+            animation: divHighlight 0.2s forwards 0s ease-in;
+        }
+        
+        #map {
+            border: 2px solid #ff9eff;
+            margin-top: 8px;
+            height: 700px;
+            width: 100%;
+        }
+        
+        .head {
+            color: rgb(124, 117, 155);
+            text-transform: uppercase;
+            font-size: 7vw;
+            letter-spacing: 10px;
+            line-height: 10vw;
+        }
+        
+        .hr1 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            border: 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        .rating-stars ul {
+            list-style-type: none;
+            padding: 0
+        }
+        
+        .rating-stars ul>li.star {
+            display: inline-block;
+        }
+        
+        .fa-star:hover {
+            color: gold
+        }
+        
+        .fa-star-active {
+            color: gold
+        }
+        /* Animations */
+        
+        @keyframes btnAnimation {
+            0% {
+                transform: rotate(0) translateX(-20px);
+                opacity: 0;
+            }
+            100% {
+                transform: rotate(0) translateX(0);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes fadeIn {
+            0% {
+                transform: rotate(0) translateY(-20%);
+                opacity: 0;
+            }
+            100% {
+                transform: rotate(0) translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes navBarAnimation {
+            0% {
+                transform: rotate(0) translateY(-50%);
+                opacity: 0;
+            }
+            99% {
+                transform: rotate(0) translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes principal-div {
+            0% {
+                transform: rotate(0) translateY(20%);
+                opacity: 0;
+            }
+            100% {
+                transform: rotate(0) translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes div-show-up {
+            0% {
+                transform: rotate(0) translateY(100px);
+                opacity: 0;
+            }
+            100% {
+                transform: rotate(0) translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        .elementToAnimate {
+            animation: div-show-up 1s infinite 0s linear;
+        }
+        
+        @keyframes divHighlight {
+            0% {
+                transform: rotate(0) scale(1);
+                box-shadow: 2px 2px 33px 3px rgba(0, 0, 0, 0.75);
+            }
+            100% {
+                transform: rotate(0) scale(1);
+                box-shadow: 1px 1px 10px 1px #AF5899;
+            }
+        }
